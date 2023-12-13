@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahana - Computer Science and Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(40, 38, 54);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 69px;
+            background-color: rgb(43, 43, 82);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(172, 172, 247);
+            font-size: 1.02rem;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+            width: 750px
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+
+        }
+
+        .first>div {
+            width: 40%;
+
+        }
+
+        .leftSection {
+
+            margin: 51px 0;
+            font-size: 3rem;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        #name {
+            color: rgb(172, 172, 247);
+        }
+
+        .second {
+            max-width: 90vw;
+            margin: auto;
+        }
+
+        #element {
+            color: rgb(172, 172, 247);
+        }
+
+        .second h1 {
+            font-size: 2.0rem;
+            margin: 30px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(101, 101, 164);
+            height: 4.2px;
+            margin: 40px 75px;
+        }
+
+        .category-image {
+            height: 65%;
+            width: 90%;
+            margin-bottom: 1rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+        }
+
+        .second h5 {
+            text-align: center;
+        }
+
+        .third {
+            max-width: 90vw;
+            margin: auto;
+
+        }
+
+        .third h1 {
+            font-size: 2.0rem;
+            margin: 30px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            column-gap: 20px;
+        }
+
+        .c h6{
+            color: white;
+            margin-bottom: 30px;
+            font-size: larger;
+            margin-left: 10px;
+            justify-content:space-between;
+        }
+
+        .c {
+            height: 400px;
+            width: 33%;
+            background-color: rgb(43, 43, 82);
+            margin-right: 10px;
+            border-radius: 4px;
+            text-align: left;
+            justify-content: space-between;
+            padding: 10px;
+            color: rgb(192, 190, 190);
+
+        }
+        .head
+        {
+            height: 70px;
+            border-bottom: 1px white solid;
+            margin-bottom: 15px;
+            
+        }
+        footer{
+            width: 100%;
+            height: 150px;
+            background-color: rgb(43, 43, 82);
+            margin-top: 50px;
+            padding-top: 10px;
+        }
+        #contact h5
+        {
+            text-align: center;
+        }
+        #contact a{
+            text-decoration: none;
+            text-align: center;
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Sahana's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/">Home</a> </li>
+                    <li> <a href="#skill">Skills</a> </li>
+                    <li> <a href="#projects">Projects</a> </li>
+                    <li> <a href="#contact">Contact Me</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                Hi , I am <span id="name">Sahana</span>
+                <div style="width: 100%;"> and I am a Computer Science Student</div>
+                <div>and passionate about</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="developer.png" alt="background image">
+            </div>
+
+        </section>
+        <hr>
+        <section class="second" id="skill">
+
+            <h1>Skills</h1>
+            <div class="row">
+                <div class="category-box col-lg-3" id="category1">
+                    <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank"><img class="category-image"
+                            src="h1.png" alt=""></a>
+                    <h5>HTML</h5>
+                </div>
+                <div class="category-box col-lg-3" id="category2">
+                    <a href="https://www.w3schools.com/css/" target="_blank"><img class="category-image" src="css.png"
+                            alt=""></a>
+                    <h5>CSS</h5>
+                </div>
+                <div class="category-box col-lg-3" id="category3">
+                    <a href="https://www.w3schools.com/js/" target="_blank"><img class="category-image" src="ja.png"
+                            alt=""></a>
+                    <h5>Java Script</h5>
+                </div>
+                <div class="category-box col-lg-3" id="category4">
+                    <a href="https://www.w3schools.com/nodejs/" target="_blank"><img class="category-image"
+                            src="node.png" alt=""></a>
+                    <h5>Nodejs</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="category-box col-lg-3" id="c1">
+                    <a href="https://www.w3schools.com/java/" target="_blank"><img class="category-image" src="java.png"
+                            alt=""></a>
+                    <h5>Java</h5>
+                </div>
+                <div class="category-box col-lg-3" id="c2">
+                    <a href="https://www.w3schools.com/bootstrap/" target="_blank"><img class="category-image"
+                            src="bs.jpeg" alt=""></a>
+                    <h5>BootStrap</h5>
+                </div>
+                <div class="category-box col-lg-3" id="c3">
+                    <a href="https://www.w3schools.com/python/" target="_blank"><img class="category-image"
+                            src="python.jpeg" alt=""></a>
+                    <h5>Python</h5>
+                </div>
+                <div class="category-box col-lg-3" id="c4">
+                    <a href="https://www.w3schools.com/sql/" target="_blank"><img class="category-image" src="s1.png"
+                            alt=""></a>
+                    <h5>SQL</h5>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="third" id="projects">
+            <h1>Projects</h1>
+
+            <div class="container">
+                <div class="c">
+                   <div class="head"><h6>Determining the architecture of the
+                    monument using deep learning</h6></div>
+                    
+                    <ul>
+                        <li>Created a deep learning model which classifies the architectural
+                            style of the monuments.</li>
+                        <li>Pretrained VGG19 model is used with the help of transfer learning to
+                            make predictions.</li>
+                        <li>A front end is built using flask for this model to upload the image
+                            and get the architectural style.</li>
+                        <li>Framework used : TensorFlow</li>
+                    </ul>
+                    
+
+                </div>
+                <div class="c">
+                    <div class="head"><h6 style="text-align: center;">Online Grocery Management</h6></div>
+                    <ul>
+                        <li>This portal is built for admin to manage the sales and analyze the
+                            sales.</li>
+                        <li>Front end is built using Html,CSS,BootStrap and JavaScript</li>
+                        <li>Server side scripting is done using Node.js</li>
+                        <li>MySql is used to store the data in the backend.</li>
+                        <li>Skills acquired : HTML , CSS , JavaScript , Node.js , MySql , BootStrap</li>
+                    </ul>
+
+                </div>
+                <div class="c">
+                    <div class="head"><h6 style="text-align: center;">Big Data Project</h6></div>
+                    <ul>
+                        <li>Query Benchmarking on Open Source Framework like
+                            Hadoop, HBase, Phoenix, Solr.</li>
+                        <li>Apache Phoenix Framework: it is an add-on for Apache HBase that provides a programmatic
+                                ANSI SQL interface. </li>
+                        <li>Apache Lucene Framework : it is a NoSQL database with transactional support.</li>
+                        <li>Skills acquired : SQL , Solr query writing , hbase query qritin.</li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+        <div id="contact">
+            <h5>Contact Me</h5>
+            <a href="https://mail.google.com"><p>sahanaveereshy.cs20@rvce.edu.in</p></a>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developing', 'Computer Networking', '&amp; Machine Learning.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
